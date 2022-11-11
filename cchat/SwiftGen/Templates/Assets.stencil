@@ -1,0 +1,83 @@
+// swiftlint:disable all
+// Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
+
+{% if catalogs %}
+{% set forceNamespaces %}{{param.forceProvidesNamespaces|default:"false"}}{% endset %}
+import UIKit
+import SwiftUI
+
+// MARK: - Asset Catalogs
+{% macro casesBlock assets swiftUI%}
+  {% for asset in assets %}
+  {% if asset.type == "color" and swiftUI == "true" %}
+  internal static let {{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}} = ColorAsset(name: "{{asset.value}}").color
+  {% elif asset.type == "color" and swiftUI == "false" %}
+  internal static let {{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}} = ColorAsset(name: "{{asset.value}}").uiColor
+  {% elif asset.type == "image" and swiftUI == "true" %}
+  internal static let {{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}} = ImageAsset(name: "{{asset.value}}").image
+  {% elif asset.type == "image" and swiftUI == "false" %}
+  internal static let {{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}} = ImageAsset(name: "{{asset.value}}").uiImage
+  {% elif asset.items and ( forceNamespaces == "true" or asset.isNamespaced == "true" ) %}
+  internal enum {{asset.name|swiftIdentifier:"pretty"|escapeReservedKeywords}} {
+    {% filter indent:4 %}{% call casesBlock asset.items swiftUI %}{% endfilter %}
+  }
+  {% elif asset.items %}
+  {% call casesBlock asset.items swiftUI %}
+  {% endif %}
+  {% endfor %}
+{% endmacro %}
+internal enum UIAsset {
+  {% if catalogs.count > 1 or param.forceFileNameEnum %}
+  {% for catalog in catalogs %}
+  internal enum {{catalog.name|swiftIdentifier:"pretty"|escapeReservedKeywords}} {
+    {% filter indent:4 %}{% call casesBlock catalog.assets "false" %}{% endfilter %}
+  }
+  {% endfor %}
+  {% else %}
+  {% call casesBlock catalogs.first.assets "false" %}
+  {% endif %}
+}
+internal enum Asset {
+  {% if catalogs.count > 1 or param.forceFileNameEnum %}
+  {% for catalog in catalogs %}
+  internal enum {{catalog.name|swiftIdentifier:"pretty"|escapeReservedKeywords}} {
+    {% filter indent:4 %}{% call casesBlock catalog.assets "true" %}{% endfilter %}
+  }
+  {% endfor %}
+  {% else %}
+  {% call casesBlock catalogs.first.assets "true" %}
+  {% endif %}
+}
+// MARK: - Implementation Details
+internal struct ColorAsset {
+    internal private(set) var name: String
+
+    internal var uiColor: UIColor {
+        guard let result = UIColor(named: name) else {
+            fatalError("Unable to load color asset named \(name).")
+        }
+        return result
+    }
+
+    internal var color: Color {
+        return Color(name)
+    }
+}
+
+internal struct ImageAsset {
+    internal private(set) var name: String
+
+    internal var uiImage: UIImage {
+        guard let result = UIImage(named: name) else {
+            fatalError("Unable to load image asset named \(name).")
+        }
+        return result
+    }
+
+    internal var image: Image {
+        return Image(name)
+    }
+}
+{% else %}
+// No assets found
+{% endif %}
