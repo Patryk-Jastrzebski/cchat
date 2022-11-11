@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3C1EB2291E6702002EF976 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C1EB1291E6702002EF976 /* .swiftlint.yml */; };
+		3D3C1EB4291E676F002EF976 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C1EB3291E676F002EF976 /* .gitignore */; };
+		3D3C1EB8291E68D9002EF976 /* loc.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C1EBA291E68D9002EF976 /* loc.strings */; };
+		3D3C1EC0291E69E7002EF976 /* Assets.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C1EBE291E69E7002EF976 /* Assets.stencil */; };
+		3D3C1EC1291E69E7002EF976 /* Strings.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C1EBF291E69E7002EF976 /* Strings.stencil */; };
+		3D3C1EC5291E6A4A002EF976 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C1EC3291E6A4A002EF976 /* Strings.swift */; };
+		3D3C1EC6291E6A4A002EF976 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C1EC4291E6A4A002EF976 /* Assets.swift */; };
 		3D7470D2291E4BF500DFB122 /* cchatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7470D1291E4BF500DFB122 /* cchatApp.swift */; };
 		3D7470D4291E4BF500DFB122 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7470D3291E4BF500DFB122 /* ContentView.swift */; };
 		3D7470D6291E4BF800DFB122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D7470D5291E4BF800DFB122 /* Assets.xcassets */; };
 		3D7470D9291E4BF800DFB122 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D7470D8291E4BF800DFB122 /* Preview Assets.xcassets */; };
+		D5A2620E397868CE22B40D72 /* Pods_cchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62BF12FE4F082B5B6DC2D06 /* Pods_cchat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D3C1EB1291E6702002EF976 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		3D3C1EB3291E676F002EF976 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		3D3C1EB9291E68D9002EF976 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/loc.strings; sourceTree = "<group>"; };
+		3D3C1EBE291E69E7002EF976 /* Assets.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Assets.stencil; sourceTree = "<group>"; };
+		3D3C1EBF291E69E7002EF976 /* Strings.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Strings.stencil; sourceTree = "<group>"; };
+		3D3C1EC3291E6A4A002EF976 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		3D3C1EC4291E6A4A002EF976 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		3D7470CE291E4BF500DFB122 /* cchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D7470D1291E4BF500DFB122 /* cchatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cchatApp.swift; sourceTree = "<group>"; };
 		3D7470D3291E4BF500DFB122 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D7470D5291E4BF800DFB122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D7470D8291E4BF800DFB122 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A82698C54449B6AE06461EC /* Pods-cchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cchat.release.xcconfig"; path = "Target Support Files/Pods-cchat/Pods-cchat.release.xcconfig"; sourceTree = "<group>"; };
+		B624F5525BF373523267791F /* Pods-cchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cchat.debug.xcconfig"; path = "Target Support Files/Pods-cchat/Pods-cchat.debug.xcconfig"; sourceTree = "<group>"; };
+		D62BF12FE4F082B5B6DC2D06 /* Pods_cchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +44,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A2620E397868CE22B40D72 /* Pods_cchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D3C1EB5291E680E002EF976 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C1EBA291E68D9002EF976 /* loc.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		3D3C1EBB291E6963002EF976 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D7470D5291E4BF800DFB122 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D3C1EBC291E69AA002EF976 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C1EC2291E69F7002EF976 /* Generated */,
+				3D3C1EBD291E69B9002EF976 /* Templates */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		3D3C1EBD291E69B9002EF976 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C1EBE291E69E7002EF976 /* Assets.stencil */,
+				3D3C1EBF291E69E7002EF976 /* Strings.stencil */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		3D3C1EC2291E69F7002EF976 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C1EC4291E6A4A002EF976 /* Assets.swift */,
+				3D3C1EC3291E6A4A002EF976 /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		3D7470C5291E4BF500DFB122 = {
 			isa = PBXGroup;
 			children = (
 				3D7470D0291E4BF500DFB122 /* cchat */,
 				3D7470CF291E4BF500DFB122 /* Products */,
+				B0BDF10858ED1A70211FA77A /* Pods */,
+				EF2B8F61554898B73281C262 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +115,13 @@
 		3D7470D0291E4BF500DFB122 /* cchat */ = {
 			isa = PBXGroup;
 			children = (
-				3D7470D1291E4BF500DFB122 /* cchatApp.swift */,
-				3D7470D3291E4BF500DFB122 /* ContentView.swift */,
-				3D7470D5291E4BF800DFB122 /* Assets.xcassets */,
+				3D3C1EB5291E680E002EF976 /* Localizations */,
+				3D7470E3291E4CBB00DFB122 /* Configuration */,
+				3D7470E1291E4C6A00DFB122 /* Helpers */,
+				3D7470E0291E4C5C00DFB122 /* Extensions */,
+				3D7470DF291E4C1300DFB122 /* Features */,
+				3D3C1EBB291E6963002EF976 /* Resources */,
+				3D3C1EBC291E69AA002EF976 /* SwiftGen */,
 				3D7470D7291E4BF800DFB122 /* Preview Content */,
 			);
 			path = cchat;
@@ -67,6 +135,63 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3D7470DF291E4C1300DFB122 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3D7470E2291E4C7A00DFB122 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3D7470E0291E4C5C00DFB122 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3D7470E1291E4C6A00DFB122 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3D7470E2291E4C7A00DFB122 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3D7470E3291E4CBB00DFB122 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C1EB1291E6702002EF976 /* .swiftlint.yml */,
+				3D3C1EB3291E676F002EF976 /* .gitignore */,
+				3D7470D3291E4BF500DFB122 /* ContentView.swift */,
+				3D7470D1291E4BF500DFB122 /* cchatApp.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B0BDF10858ED1A70211FA77A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B624F5525BF373523267791F /* Pods-cchat.debug.xcconfig */,
+				8A82698C54449B6AE06461EC /* Pods-cchat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF2B8F61554898B73281C262 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D62BF12FE4F082B5B6DC2D06 /* Pods_cchat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D7470DC291E4BF800DFB122 /* Build configuration list for PBXNativeTarget "cchat" */;
 			buildPhases = (
+				90822E85C35495C29E149AAE /* [CP] Check Pods Manifest.lock */,
 				3D7470CA291E4BF500DFB122 /* Sources */,
 				3D7470CB291E4BF500DFB122 /* Frameworks */,
 				3D7470CC291E4BF500DFB122 /* Resources */,
+				3D3C1EB0291E6696002EF976 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -125,12 +252,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D3C1EC1291E69E7002EF976 /* Strings.stencil in Resources */,
+				3D3C1EB4291E676F002EF976 /* .gitignore in Resources */,
+				3D3C1EB8291E68D9002EF976 /* loc.strings in Resources */,
+				3D3C1EB2291E6702002EF976 /* .swiftlint.yml in Resources */,
 				3D7470D9291E4BF800DFB122 /* Preview Assets.xcassets in Resources */,
 				3D7470D6291E4BF800DFB122 /* Assets.xcassets in Resources */,
+				3D3C1EC0291E69E7002EF976 /* Assets.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D3C1EB0291E6696002EF976 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then \n    swiftlint\nelse \n    echo \"Swiftlint not installed\"\nfi\n";
+		};
+		90822E85C35495C29E149AAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cchat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D7470CA291E4BF500DFB122 /* Sources */ = {
@@ -138,11 +314,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D7470D4291E4BF500DFB122 /* ContentView.swift in Sources */,
+				3D3C1EC5291E6A4A002EF976 /* Strings.swift in Sources */,
+				3D3C1EC6291E6A4A002EF976 /* Assets.swift in Sources */,
 				3D7470D2291E4BF500DFB122 /* cchatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D3C1EBA291E68D9002EF976 /* loc.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3C1EB9291E68D9002EF976 /* en */,
+			);
+			name = loc.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3D7470DA291E4BF800DFB122 /* Debug */ = {
@@ -261,6 +450,7 @@
 		};
 		3D7470DD291E4BF800DFB122 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B624F5525BF373523267791F /* Pods-cchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,6 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +481,7 @@
 		};
 		3D7470DE291E4BF800DFB122 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A82698C54449B6AE06461EC /* Pods-cchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +496,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
