@@ -6,4 +6,34 @@
   
 */
 
-"Login.Title" = "cchat";
+"App.Name" = "cchat";
+"Welcome.LoginButton" = "Sign Up";
+"Welcome.RegisterButton" = "OR SIGN IN TO OUR SOCIETY";
+"Welcome.Text" = "Sign In, Register or Authorize here";
+
+// MARK: - Login
+
+"Login.Welcome.Message" = "SIGN IN OR SIGN UP!";
+"Login.Welcome.Title" = "Oh Hi, log in here";
+"Login.Welcome.Subtitle" = "Step in to chat with other people, meet some special person.";
+"Login.Button.Forgot" = "Forgot password?";
+"Login.TextField.Email" = "E-mail";
+"Login.Button.Login" = "Continue";
+
+// MARK: - Password
+
+"Password.Welcome.Message" = "WELCOME BACK!";
+"Password.Welcome.Title" = "We have missed you!";
+"Password.Welcome.Subtitle" = "It looks like you have an account. Just log in.";
+"Password.TextField.Password" = "Password";
+"Password.Button.Forgot" = "Forgot password?";
+"Password.Button.Login" = "Login";
+
+// Mark: - Password creation
+
+"PasswordCreator.Textfield.Placeholder.First" = "Password";
+"PasswordCreator.Textfield.Placeholder.Second" = "Repeat password";
+"PasswordCreator.Message" = "";
+"PasswordCreator.Title" = "";
+"PasswordCreator.Subtitle" = "";
+
