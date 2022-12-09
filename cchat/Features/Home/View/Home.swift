@@ -8,22 +8,19 @@
 import SwiftUI
 
 struct Home: View {
-    @AppStorage(AppStorageVariables.loginStatus) var userLoggedIn = false
+    @StateObject var viewModel = HomeViewModel()
+    
     var body: some View {
         VStack {
-            Text("Witaj kozaku")
-            Button("logout") {
-                Task {
-                    do {
-                        try API.auth.signOut()
-                    } catch {
-                        
-                    }
-                }
-                withAnimation {
-                    userLoggedIn = false
-                }
+            welcomeUser
+            Spacer()
+            HStack {
+                nextScreen
+                logout
             }
+        }
+        .onAppear {
+            viewModel.getUserData()
         }
     }
 }
@@ -31,5 +28,39 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+            .preferredColorScheme(.dark)
+    }
+}
+
+extension Home {
+    private var welcomeUser: some View {
+        Text("Witaj, \(viewModel.user.email)")
+            .font(.system(size: 20, weight: .semibold))
+    }
+    
+    private var nextScreen: some View {
+        NavigationLink {
+           EmptyView()
+        } label: {
+            Text("Next")
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundColor(.black)
+                .frame(width: 100, height: 45)
+                .background(.white)
+                .cornerRadius(25)
+        }
+    }
+    
+    private var logout: some View {
+        Button {
+            viewModel.logoutUser()
+        } label: {
+            Text("Logout")
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundColor(.black)
+                .frame(width: 100, height: 45)
+                .background(.white)
+                .cornerRadius(25)
+        }
     }
 }

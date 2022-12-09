@@ -52,6 +52,7 @@
 		3DA956F629215B6B006C7BAC /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA956F529215B6B006C7BAC /* Password.swift */; };
 		3DA956F829215CD6006C7BAC /* AddNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA956F729215CD6006C7BAC /* AddNameView.swift */; };
 		3DA956FA29215D08006C7BAC /* AccountCreatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA956F929215D08006C7BAC /* AccountCreatorViewModel.swift */; };
+		3DC8771C294398680017F107 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8771B294398680017F107 /* HomeViewModel.swift */; };
 		3DF65F46292EB6260010C1BA /* onBoardingVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3DF65F45292EB6260010C1BA /* onBoardingVideo.mp4 */; };
 		D5A2620E397868CE22B40D72 /* Pods_cchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62BF12FE4F082B5B6DC2D06 /* Pods_cchat.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,7 @@
 		3DA956F529215B6B006C7BAC /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		3DA956F729215CD6006C7BAC /* AddNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNameView.swift; sourceTree = "<group>"; };
 		3DA956F929215D08006C7BAC /* AccountCreatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreatorViewModel.swift; sourceTree = "<group>"; };
+		3DC8771B294398680017F107 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3DF65F45292EB6260010C1BA /* onBoardingVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = onBoardingVideo.mp4; sourceTree = "<group>"; };
 		8A82698C54449B6AE06461EC /* Pods-cchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cchat.release.xcconfig"; path = "Target Support Files/Pods-cchat/Pods-cchat.release.xcconfig"; sourceTree = "<group>"; };
 		B624F5525BF373523267791F /* Pods-cchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cchat.debug.xcconfig"; path = "Target Support Files/Pods-cchat/Pods-cchat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		3D304E0C292ABD3F00F124D3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3DC8771B294398680017F107 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				3DA956F629215B6B006C7BAC /* Password.swift in Sources */,
 				3D4E2F1429379398009DCD68 /* View+Extension.swift in Sources */,
 				3D0343D3291E7AA60005E263 /* WelcomeIcons.swift in Sources */,
+				3DC8771C294398680017F107 /* HomeViewModel.swift in Sources */,
 				3D0343DA291E8C130005E263 /* SpinnerCircle.swift in Sources */,
 				3D0343DD291EC63E0005E263 /* LoginViewModel.swift in Sources */,
 				3DA956FA29215D08006C7BAC /* AccountCreatorViewModel.swift in Sources */,

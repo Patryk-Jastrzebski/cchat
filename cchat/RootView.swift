@@ -17,7 +17,8 @@ struct ContentView: View {
                 Home()
                     .transition(.backslide)
             } else {
-                LoginMainScreen()
+                Welcome()
+                    .transition(.backslide)
             }
         }
         .sheet(isPresented: $isDebuggerOpened) {

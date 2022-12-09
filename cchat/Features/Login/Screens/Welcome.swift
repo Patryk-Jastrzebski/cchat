@@ -10,6 +10,7 @@ import AVKit
 import AVFoundation
 
 struct Welcome: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack {
             GeometryReader { geo in
@@ -33,6 +34,9 @@ struct Welcome: View {
                 Spacer()
                 loginButtonStating
             }
+        }
+        .onAppear {
+            dismiss()
         }
     }
 }
